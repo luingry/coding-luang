@@ -41,7 +41,26 @@ body {
     background-color: #cacaca;
     justify-content: space-between;
     padding: 15px 50px;
+    position: sticky;
+    transition: .6s ease;
+    top: 0;
+    z-index: 10;
 }
+
+.header img {
+    transition: .6s ease;
+    transform: scale(1);
+}
+
+.scrollado {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    padding: 5px 50px;
+}
+
+.scrollado img {
+    transform: scale(.7);
+}
+
 .header ul {
     display: flex;
     align-items: center;
@@ -76,7 +95,6 @@ body {
     background-color: rgba(6, 21, 105, 0.54);
     border-radius: 24px;  
     color: #eee;
-    margin-left: ;
     position:absolute;
     margin-left: 50px;
     padding: 20px 40px;
@@ -138,4 +156,8 @@ body {
     border-radius: 10px;
     margin: 62px 0;
     width: 30px;
+}
+
+.selecionado {
+    border: 20px solid black;
 }
